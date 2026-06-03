@@ -98,7 +98,7 @@ const SITES = [
       "Great ebook site. Use the onion link only - download TOR and access it " +
       "that way. Once you have an account, there's an Android app so you don't " +
       "need a browser every time.",
-    screenshot: "",
+    screenshot: "z-library.png",
   },
   {
     name: "Rutracker",
