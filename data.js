@@ -53,7 +53,6 @@ const SITES = [
       "- I have 1 invite left. Read the rules before doing anything; they're " +
       "strict and will ban you.",
     screenshot: "",
-    featured: true,
   },
   {
     name: "YIFY movies",
@@ -71,7 +70,6 @@ const SITES = [
     categories: ["anime"],
     description: "The best site for anime downloads. Simple.",
     screenshot: "",
-    featured: true,
   },
   {
     name: "AudioBookBay",
@@ -91,7 +89,6 @@ const SITES = [
       "The largest ebook repository on the planet. Terabytes of books and " +
       "academic papers.",
     screenshot: "",
-    featured: true,
   },
   {
     name: "Z-Library",
@@ -110,7 +107,6 @@ const SITES = [
     description:
       "The only music site I use. Excellent for FLAC rips. Russian.",
     screenshot: "",
-    featured: true,
   },
   {
     name: "FitGirl Repacks",
@@ -120,7 +116,6 @@ const SITES = [
       "Girl with spoon. The definitive repacker. THIS is the real site - all " +
       "others are fakes. Do not download from any other site claiming to be her.",
     screenshot: "",
-    featured: true,
   },
 ];
 
