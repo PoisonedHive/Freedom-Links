@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freedom Links — a curated directory</title>
+  <meta name="description" content="A curated, hand-tagged directory of useful sites for movies, shows, music and more." />
+  <link rel="preconnect" href="https://image.thum.io" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>" />
+</head>
+<body>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="brand-mark">🔗</span>
+        <div>
+          <h1 class="brand-title">Freedom Links</h1>
+          <p class="brand-tagline">A hand-picked, hand-tagged directory of sites worth knowing.</p>
+        </div>
+      </div>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle light / dark theme" title="Toggle theme">
+        <span class="theme-toggle-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- ============ CONTROLS ============ -->
+    <section class="controls" aria-label="Filter the directory">
+      <div class="search-row">
+        <label class="search" for="search">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input id="search" type="search" placeholder="Search by name, description or domain…" autocomplete="off" />
+        </label>
+      </div>
+
+      <div class="filter-label">Show me sites for…</div>
+      <div id="filterBar" class="filter-bar" role="group" aria-label="Category filters">
+        <!-- Filter buttons are injected by app.js -->
+      </div>
+    </section>
+
+    <!-- ============ ACTIVE SITES ============ -->
+    <section aria-label="Active sites">
+      <div class="section-head">
+        <h2 class="section-title">The Links</h2>
+        <span id="resultCount" class="result-count"></span>
+      </div>
+      <div id="siteGrid" class="card-grid">
+        <!-- Site cards injected by app.js -->
+      </div>
+      <p id="emptyState" class="empty-state" hidden>
+        No sites match that filter yet. Try clearing the filters or searching for something else.
+      </p>
+    </section>
+
+    <!-- ============ GRAVEYARD ============ -->
+    <section class="graveyard" aria-label="Dead sites">
+      <div class="section-head">
+        <h2 class="section-title">🪦 The Graveyard</h2>
+        <span class="result-count">Here lie the fallen. Goddamn glowies fucking shit up.</span>
+      </div>
+      <!-- Optional tribute GIF — set its path in data.js (GRAVEYARD_GIF). Stays hidden until it loads. -->
+      <img id="graveyardGif" class="graveyard-gif" alt="Paying respects to the fallen sites" hidden />
+      <div id="graveyardGrid" class="card-grid graveyard-grid">
+        <!-- Graveyard cards injected by app.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        Built as a personal directory. Always scan downloads, use an ad-blocker, and click the
+        <strong>VirusTotal</strong> badge before you trust a new site.
+      </p>
+      <p class="footer-edit">Add or edit links by editing <code>data.js</code>.</p>
+    </div>
+  </footer>
+
+  <!-- data.js holds ALL your links — edit that file to add/remove sites -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
